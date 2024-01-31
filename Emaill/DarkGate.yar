@@ -6,9 +6,10 @@ This Yara ruleset is under the GNU-GPLv2 license (http://www.gnu.org/licenses/gp
 rule DarkGate
 {
     Meta:
-            description: 
+            description = "DarkGate Campaign Detection"
             author = Daevon Rascoe
             Date = 2024-01-23
+            Reference = https://www.proofpoint.com/us/blog/threat-insight/battleroyal-darkgate-cluster-spreads-email-and-fake-browser-updates
     strings:
         $url1 = "https://hielee.com/qxz31"
         $url2 = "https://nathumvida.org"
@@ -26,18 +27,19 @@ rule DarkGate
         $url_hash6 =  "ea8f893c080159a423c9122b239ec389939e4c3c1f218bdee16dde744e08188f"
         $url_hash7 =  "7562c213f88efdb119a9bbe95603946ba3beb093c326c3b91e7015ae49561f0f"
 
-        $filename_pattern1 =  "IN-SEPT-8415-8794132.pdf.url" 
+        $filename_pattern1 = "IN-SEPT-8415-8794132.pdf.url" 
         $filename_pattern2 = "bye.vbs"
         $filename_pattern3 = "Autoit3.exe"
-        $filename_pattern4 =  "iabyhu.au3"
-        $filename_pattern = ""
-        $filename_pattern = ""
-        $filename_pattern = ""
+        $filename_pattern4 = "iabyhu.au3"
+        $filename_pattern =  "ggvjzi.au3"
+        $filename_pattern =  ""
+        $filename_pattern =  ""
+
+        $DarkGateC2 = "161.35.113.58:443"
+        $netSupportCampaignStrings = /kairoscounselingmi\.com\/|evervendor\.zip\/evervendor\.exe/
        
 
 
     condition:
-        ($url5 and $url_hash1) or ($url_hash1 and $filename_pattern1)
-        ($url4 and $url_hash2) or ($url3 and $url_hash2 and $filename_pattern2)
-        ($url3 and $url_hash3) or (url_hash3 and $filename_pattern3)
+     
 }
