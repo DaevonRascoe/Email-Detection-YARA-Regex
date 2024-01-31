@@ -1,0 +1,35 @@
+
+
+
+
+
+rule TA4557_Email_Detection {
+    meta:
+        description = "Detects TA4557 Malware Delivery"
+        author = "Daevon Rascoe"
+        reference3 = https://www.proofpoint.com/us/blog/threat-insight/security-brief-ta4557-targets-recruiters-directly-email
+        reference2 = https://www.virustotal.com/gui/domain/wlynch.com/relations
+        refernce3 = https://www.virustotal.com/gui/domain/annetterawlings.com/relations
+    strings:
+        $maliciousDomain1 = "wlynch.com" 
+        $maliciousDomain2 = "annetterawlings.com" 
+        $maliciousSHA256_1 = "9d9b38dffe43b038ce41f0c48def56e92dba3a693e3b572dbd13d5fbc9abc1e4"
+        $maliciousSHA256_2 = "6ea619f5c33c6852d6ed11c52b52589b16ed222046d7f847ea09812c4d51916d" 
+        $maliciousSHA256_3 = "010b72def59f45662150e08bb80227fe8df07681dcf1a8d6de8b068ee11e0076" 
+
+        $outlookString1 = "Received: annetterawlings-com.mail.protection.outlook.com"
+        $return_path1 = "Return-Path: <webmail.wlynch.com>" 
+        
+
+        $outlookString2 = "Received: wlynch-com.mail.protection.outlook.com" 
+        $return_path1 = "Return-Path: <webmail.wlynch.com>" 
+        $return_path2 = "Return-Path: <smtp.wlynch.com>"
+        $return_path3 = "Return-Path: <pop.wlynch.com>"
+
+        $ipAddress = "18.205.150.54"
+        $ipAddress = "52.87.193.124"
+
+    condition:
+        any of ($maliciousDomain1, $maliciousDomain2) and
+        any of ($maliciousSHA256_1, $maliciousSHA256_2, $maliciousSHA256_3)
+}
