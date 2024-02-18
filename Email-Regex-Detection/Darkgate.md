@@ -23,7 +23,7 @@ hxxps://adclick[.]g[.]doubleclick[.]net/pcs/click?fjWWEJMP5797-NovemberQFRSQG657
 
 hxxps://kairoscounselingmi[.]com/
 
-hxxps://kairoscounselingmi[.]com/wp-content/uploads/astra/help/pr-nv28-2023[.]ur
+hxxps://kairoscounselingmi[.]com/wp-content/uploads/astra/help/pr-nv28-2023[.]url
 
 
 ## Regex Detection:
