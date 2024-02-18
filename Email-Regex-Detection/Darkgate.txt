@@ -16,8 +16,7 @@ Regex Detection:
 Testing:
   Tool: https://regex101.com/
 
-        https://imgur.com/YIiE7Oj
-
+    
 
 
 
