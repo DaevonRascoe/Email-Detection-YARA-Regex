@@ -1,6 +1,6 @@
 Reference: https://www.proofpoint.com/us/blog/threat-insight/battleroyal-darkgate-cluster-spreads-email-and-fake-browser-updates
 
-Urls:
+## Urls:
 hxxps://heilee[.]com/qxz3l
 hxxps://nathumvida[.]org/
 hxxp://searcherbigdealk[.]com:2351/zjbicvmd
