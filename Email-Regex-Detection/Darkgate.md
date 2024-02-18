@@ -1,4 +1,10 @@
-Reference: https://www.proofpoint.com/us/blog/threat-insight/battleroyal-darkgate-cluster-spreads-email-and-fake-browser-updates
+# Regex Detection: Darkgate Url Detection
+
+## Reference: 
+
+Blog: https://www.proofpoint.com/us/blog/threat-insight/battleroyal-darkgate-cluster-spreads-email-and-fake-browser-updates
+
+Detection Testing: https://regex101.com/
 
 ## Urls:
 hxxps://heilee[.]com/qxz3l
@@ -22,8 +28,6 @@ hxxps://kairoscounselingmi[.]com/wp-content/uploads/astra/help/pr-nv28-2023[.]ur
 ```regex
 \b(?:https?:\/\/(?:heilee\.com|nathumvida\.org|searcherbigdealk\.com|adclick\.g\.doubleclick\.net|kairoscounselingmi\.com)[^\s'"<>]*|file:\/\/(?:Downloads))[^\s'"<>]*
 
-Testing:
-  Tool: https://regex101.com/
 
     
 
