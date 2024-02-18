@@ -16,7 +16,7 @@ This repository is your comprehensive resource for detecting and mitigating emai
 - **Community Collaboration**: Join forces with security professionals, researchers, and enthusiasts worldwide! Contribute your own detection rules, share insights, and collaborate to strengthen our collective defenses against email-based threats.
 
 
-Get involved, contribute to the community
+
 
 
 
