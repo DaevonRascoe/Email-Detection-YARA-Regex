@@ -16,16 +16,9 @@ Regex Detection:
 Testing:
   Tool: https://regex101.com/
 
-  Test String:
-        hxxps://heilee[.]com/qxz3l  (Detected)
-        hxxps://nathumvida[.]org/   (Detected)
-        hxxp://searcherbigdealk[.]com:2351/zjbicvmd  (Detected)
-        hxxp://searcherbigdealk[.]com:2351   (Detected)
-        hxxp://searcherbigdealk[.]com:2351/msizjbicvmd  (Detected)
-        hxxps://adclick[.]g[.]doubleclick[.]net/pcs/click?fjWWEJMP5797-NovemberQFRSQG65799kd&&adurl=hxxps://kairoscounselingmi[.]com/  (Detected)
-        hxxps://kairoscounselingmi[.]com/  (Detected)
-        hxxps://kairoscounselingmi[.]com/wp-content/uploads/astra/help/pr-nv28-2023[.]url (Detected)       
+        https://imgur.com/YIiE7Oj
 
-https://img.shields.io/badge/:badgeContent
+
+
 
 
