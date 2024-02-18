@@ -19,6 +19,7 @@ hxxps://kairoscounselingmi[.]com/wp-content/uploads/astra/help/pr-nv28-2023[.]ur
 
 
 ## Regex Detection:
+```regex
 \b(?:https?:\/\/(?:heilee\.com|nathumvida\.org|searcherbigdealk\.com|adclick\.g\.doubleclick\.net|kairoscounselingmi\.com)[^\s'"<>]*|file:\/\/(?:Downloads))[^\s'"<>]*
 
 Testing:
