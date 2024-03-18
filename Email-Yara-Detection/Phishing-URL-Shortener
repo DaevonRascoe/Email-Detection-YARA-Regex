@@ -1,0 +1,26 @@
+# Yara Detection: URL Shortener
+
+## Yara Detection:
+
+rule Detect_URL_Shortening { 
+
+Meta:
+  Author = "Daevon Rascoe"
+  Last_update = "03/18/2024"
+  Reference = "https://cofense.com/blog/url-shorteners-fraudsters-friend/, https://github.com/sublime-security/sublime-rules/blob/main/emls/amazon_phish_url_shortener.eml"
+  description = "Detects usage of most Common URL Shortener Tools"
+
+strings: 
+    $url_shortening_bitly = "bit.ly" nocase 
+    $url_shortening_tinyurl = "tinyurl" nocase 
+    $url_shortening_goo_gl = "goo.gl" nocase 
+    $url_shorterning_ow = "ow.ly" nocase
+    $url_shortening_smarturl = "smarturl.it" nocase
+    $url_shortening_s = "s.id" nocase
+    $url_shortening_tiny = "tiny.pl" nocase
+    $url_shortening_x = "x.co" nocase
+    
+
+ condition: 
+     any of them
+ }
